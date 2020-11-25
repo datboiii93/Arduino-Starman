@@ -1,0 +1,24 @@
+Couldn't get a real schematic to work, but here's my best shot.
+
+Arduino Nano:
+Pin D2 > MP3 RX output via 1k Resistor
+Pin D4 > MP3 TX output
+Pin D7 > Rope light output
+Pin D13 > Button to activate Super mode
+5V >  Button
+      MP3 Module VCC
+      Rope Light VCC
+GND > MP3 GND
+      Button (via 330 ohm resistor)
+      Rope Light GND
+      
+
+DFPlayer MP3 Module:
+(see link for schematic: https://wiki.dfrobot.com/DFPlayer_Mini_SKU_DFR0299)
+Pin 1: VCC > Arduino 5v
+Pin 2: RX > Arduino Pin D2 via 1k ohm Resistor
+Pin 3: TX > Arduino Pin D4
+Pin 6: Speaker 1 > - side of speaker
+Pin 7: GND > Arduino GND
+Pin 8: Speaker 2 > + side of speaker
+*NOTE: If SD card will not read, try swapping RX and TX. Sometimes that was the problem.
