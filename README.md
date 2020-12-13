@@ -20,6 +20,7 @@ Filaments Used: Hatchbox Yellow https://www.amazon.com/HATCHBOX-3D-Filament-Dime
 Arduino Nano (by RexQualis) (https://www.amazon.com/gp/product/B07WK4VG58/)
 Rope Light WS2812B (https://www.amazon.com/gp/product/B01CDTEJR0/)
 DFPlayer Mini MP3 Module with Speaker(https://www.amazon.com/gp/product/B07WNRHH8Z/)
+A small SD card for the mp3 to live on. (Filename doesn't matter, it will play the first mp3 file it sees on there)
 Regular push button (https://www.amazon.com/gp/product/B07Q5LNFG3)
 15' Micro USB (https://www.amazon.com/gp/product/B002KL8N6A)
 5v / 1A USB-Wall Adapter (Note that the audio would cut out when powered from the PC usb, seemingly from power draw)
