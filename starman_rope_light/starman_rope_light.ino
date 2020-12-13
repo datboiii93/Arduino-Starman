@@ -1,6 +1,6 @@
 #include <FastLED.h>
 
-const int LED_QUANT = 50;
+const int LED_QUANT = 144;
 
 #define LED_PIN     7
 #define NUM_LEDS    LED_QUANT
@@ -35,15 +35,12 @@ void Activate(){
     redRand = random(0,256);
     greenRand = random(0,256);
     blueRand = random(0,256);
-    for(int j = 0; j < LED_QUANT; j++){
-      leds[j] = CRGB(redRand, greenRand, blueRand);
-      FastLED.show();
-      
-    }
-    //delay(15);
+    FastLED.showColor(CRGB(redRand, greenRand, blueRand));
+    delay(170);
   }
   Dormant();
   isPlaying = false;
+  myDFPlayer.stop();
 }
 
 void setup() {
@@ -62,7 +59,7 @@ void setup() {
     while(true);
   }
   Serial.println(F("DFPlayer Mini online."));
-  myDFPlayer.volume(30);  //Set volume value. From 0 to 30
+  myDFPlayer.volume(20);  //Set volume value. From 0 to 30
   Dormant();
 }
 
